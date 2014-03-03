@@ -15,15 +15,15 @@ Credits are a type of currency that are created and stored in computers, by down
 between 15 sec and 2 mins.~~
     * ~~Difficulty Retarget Time -  This is important, since otherwise it could cause serious instamine problem. (Diff. Retarget Time)/(Block Time) gives you how many blocks a diff retarget will happen. This is an important parameter to consider.~~
     * ~~What will be the initial coin per block? People set it to 2 to 100, usually. Could be anything. Can also be set to do coins per block based on the block number, or even randomly (like JKC/LKY etc).~~
-    * How long you want coins per block be halved. Usually it's 6 month to 3 years. 
+    * ~~How long you want coins per block be halved. Usually it's 6 month to 3 years. ~~
     * ~~Ports, you need two: connection and RPC ports. Choose the ones that are not used in common apps.~~
-    * Agree on Final set of features for Credits to have.
-    * Get the source code for the coin sorted out with the features that it need.
-4. Finalize a website to promote Credits and eventually host the software and tutorials.
-5. Create an official marketplace and have it linked to the official site and WalletMiner
+    * ~~Agree on Final set of features for Credits to have.~~
+    * ~~Get the source code for the coin sorted out with the features that it need.~~
+4. ~~Finalize a website to promote Credits and eventually host the software and tutorials.~~
+5. ~~Create an official marketplace and have it linked to the official site and WalletMiner~~
 6. Create a wallet app for Smartphone OS’s
-7. Test that everythings runs smoothly
-8. Launch.
+7. ~~Test that everythings runs smoothly~~
+8. ~~Launch.~~
 
 # Compiling #
 
