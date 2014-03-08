@@ -831,67 +831,67 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
     int64 nSubsidy = 100 * COIN;
- 
+
         if(nHeight <= 9088)// Assuming new Reward system kicks in Sunday 9 March 2014, 00:01 PST
         {
                 nSubsidy = COIN * (796 + (500 * (nHeight / 65744)));
         }
-       
+        
        elseif(nHeight >= 9088 && < 16288){
        
-                                nSubsidy = COIN * 2000;
+				nSubsidy = COIN * 2000;
        
        }
        
        elseif(nHeight >= 16288 && < 23488){
        
-                               
-                                nSubsidy = COIN * 2250;
+
+				nSubsidy = COIN * 2250;
        
        }
        elseif(nHeight >= 23488  && < 30688){
        
-                               
-                                nSubsidy = COIN * 2500;
+
+				nSubsidy = COIN * 2500;
        
        }
        elseif(nHeight >= 30688 && < 37888){
        
-                               
-                                nSubsidy = COIN * 2750;
+
+				nSubsidy = COIN * 2750;
        
        }
        
        elseif(nHeight >= 37888 && < 45088){
        
-                               
-                                nSubsidy = COIN * 3000;
+
+				nSubsidy = COIN * 3000;
        
        }
        
        elseif(nHeight >= 45088 && < 52288){
        
-                                nSubsidy = COIN * 4000;
+				nSubsidy = COIN * 4000;
        
        }
-           elseif(nHeight >= 52288 && < 181888){
-                                nSubsidy = COIN * 2000;
-           }
-           elseif(nHeight >= 181888 && nHeight < 357204){
-                                nSubsidy = COIN * 1600;
-                }
-                elseif(nHeight >= 313375 && nHeight < 532520){
-                                nSubsidy = COIN * 1280;
-                }
-                elseif(nHeight >= 444862 && nHeight < 707836){
-                                nSubsidy = COIN * 1024;
-                }
+	   elseif(nHeight >= 52288 && < 181888){
+				nSubsidy = COIN * 2000;
+	   }
+	   elseif(nHeight >= 181888 && nHeight < 357204){
+				nSubsidy = COIN * 1600;
+		}
+		elseif(nHeight >= 313375 && nHeight < 532520){
+				nSubsidy = COIN * 1280;
+		}
+		elseif(nHeight >= 444862 && nHeight < 707836){
+				nSubsidy = COIN * 1024;
+		}
         elseif(nHeight >= 883152):
         {
                 int64 nSubsidy = 1024 * COIN;
                 nSubsidy >>= (nHeight / 1233794);
         }
- 
+
     return nSubsidy + nFees;
 }
 
